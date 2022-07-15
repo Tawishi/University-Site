@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css" class="style">
+    <title>Tawishi University</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">
+            <h3>Tawishi University</h3>
+        </div>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#socials">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Tawishi University</h1><br><br>
+            <p>Study with us and experience world-class teaching, cutting edge research and
+                the flexible degree structure of our university.</p><br>
+            <button><a href="#about">About Us</a></button>
+        </div>
+    </div>
+    <div id="about">
+        <div id="video">
+            <video width="400" controls muted autoplay>
+                <source src="video/Intro.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="stats">
+
+        </div>
+        <div id="info"></div>
+    </div>
+    <div id="form">
+        <h3>Contact Form</h3>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="socials"></div>
+        <div id="iframe"></div>
+
+</body>
+
+</html>

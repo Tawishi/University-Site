@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ff6f69;
+    font-family: cursive;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.links li {
+    list-style: none;
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.links a {
+    color: white;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.links a:hover:not(.active) {
+    color: black;
+    background-color: red;
+}
+
+.links a.active {
+    background-color: black;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/eng-hero-banner-1920x1080.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px 10px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.hero-text button:hover {
+    background-color: #ff6f69;
+    color: white;
+}
+
+#video {
+    margin: 20px;
+    position: relative;
+}
+
+/* .site-footer {
+    background-color: #0e0e0e;
+    color: #8996a0;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    position: relative;
+    z-index: 2;
+} */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+#form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
