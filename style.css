@@ -248,5 +248,6 @@ input[type=submit]:hover {
 }
 
 .img {
+    display: flex;
     align-content: center;
 }
