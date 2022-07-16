@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -42,13 +49,6 @@ nav {
 
 .links a.active {
     background-color: black;
-}
-
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-image {
@@ -95,7 +95,8 @@ html {
 }
 
 #video {
-    margin: 20px;
+    float: right;
+    margin: 0px 0px 10px 20px;
     position: relative;
 }
 
@@ -120,7 +121,6 @@ footer {
 
 .socials {
     padding: 20px;
-    ;
     text-align: center;
 }
 
@@ -180,5 +180,104 @@ input[type=submit]:hover {
 
 .rankings {
     text-align: center;
-    margin: 20px;;
+    margin: 20px;
+    ;
 }
+
+#about {
+    margin: 20px;
+}
+
+.content {
+    justify-content: center;
+    font-family: cursive;
+    font-size: large;
+    box-sizing: border-box;
+    margin: 30px;
+    word-spacing: 0.3em;
+}
+
+.flex-container-1 {
+    display: flex;
+    margin: 10px;
+
+    background-color: #ff6f69;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    /* grow shrink basis*/
+    color: black;
+}
+
+.flex-container-1>div {
+    background-color: white;
+    /* opacity: 0.3; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.flex-container-2 {
+    margin: 10px;
+    display: flex;
+    background-color: #E0E0E0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    color: white;
+}
+
+.flex-container-2>div {
+    background-color: #ff6f69;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    background-color: #ff6f69;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* .dropdown-content a:hover {
+    background-color: #ddd;
+  } */
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
