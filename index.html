@@ -21,7 +21,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#stats">Statistics</a></li>
-            <li><a href="#socials">Contact</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
 
@@ -45,30 +46,47 @@
         </div>
         <div id="info"></div>
     </div>
-    <div id="form">
-        <h3>Contact Form</h3>
+    <div class="container">
+        <form action="#">
 
-        <div class="container">
-            <form action="/action_page.php">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="usa">India</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
 
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
 
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div id="socials"></div>
-        <div id="iframe"></div>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <div class="rankings">
+        <iframe width="885" height="498" src="https://www.youtube.com/embed/uA9C8XqI07Y"
+            title="QS World University Rankings 2022" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <footer>
+        <img src="img/favicon-32x32.png" alt="logo">
+        <ul class="socials">
+            <li><a href="https://twitter.com/OfficialPU" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/school/panjab-university/" target=_blank>LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/official.pu.india/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/pu_chandigarh_updates/" target="_blank">Instagram</a></li>
+        </ul>
+        <p>&copy; Copyright 2021 Tawishi University</p>
+    </footer>
 
 </body>
 
