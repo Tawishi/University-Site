@@ -11,6 +11,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -94,7 +99,7 @@ nav {
     color: white;
 }
 
-#video {
+.wrap {
     float: right;
     margin: 0px 0px 10px 20px;
     position: relative;
@@ -167,6 +172,7 @@ input[type=submit]:hover {
 
 .container {
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 60%;
     padding: 10px;
@@ -181,7 +187,6 @@ input[type=submit]:hover {
 .rankings {
     text-align: center;
     margin: 20px;
-    ;
 }
 
 #about {
@@ -238,46 +243,10 @@ input[type=submit]:hover {
     font-size: 20px;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    border: none;
-    background-color: #ff6f69;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* .dropdown-content a:hover {
-    background-color: #ddd;
-  } */
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.faculty-image {
+    margin: 10px;
+}
+
+.img {
+    align-content: center;
+}

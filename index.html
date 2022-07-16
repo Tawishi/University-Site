@@ -15,38 +15,29 @@
 <body>
     <nav>
         <div class="heading">
-            <h3>Tawishi University</h3>
+            <h3><a href="#">Tawishi University</a></h3>
         </div>
         <ul class="links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#stats">Statistics</a></li>
             <li><a href="#faculty">Faculty</a></li>
-            <!-- <li><a href="#contact">Contacts</a></li> -->
-            <div class="dropdown">
-                <button class="nav dropbtn">Contacts
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#contact">Mail</a>
-                    <a href="#socials">Socials</a>
-                </div>
-            </div>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
 
 
     <div class="hero-image">
         <div class="hero-text">
-            <img src="img/favicon-32x32.png" alt=""><br><br>
-            <h1>Tawishi University</h1><br>
+            <a href="#"><img src="img/android-chrome-192x192.png" alt="logo"></a><br><br>
+            <h1><a href="#">Tawishi University</a></h1><br><br>
             <p>Study with us and experience world-class teaching, cutting edge research and
                 the flexible degree structure of our university.</p><br>
             <button><a href="#about">About Us</a></button>
         </div>
     </div>
     <div id="about">
-        <div id="video">
+        <div id="video" class="wrap">
             <video width="600" controls muted autoplay>
                 <source src="video/Intro.mp4" type="video/mp4">
             </video>
@@ -101,7 +92,29 @@
                 <div><small>RANKED</small><br>19<sup>th</sup><br>AMONG BEST ARCHITECTURE INSTITUTIONS</div>
             </div>
         </div>
-        <div id="info"></div>
+    </div>
+    <div class="content faculty" id="faculty">
+        <h3>Faculty</h3>
+        <hr>
+        <div class="wrap faculty-image">
+            <img src="img/faculty-1.jpg" alt="faculty" width="300px">
+            <img src="img/faculty-2.jpg" alt="faculty" width="250px">
+        </div>
+        For TU's faculty — just over 1,000 in number — cutting-edge research and education are inseparable. Each
+        feeds
+        the other. When they’re not busy pioneering the frontiers of their fields, TU faculty members play a vital
+        role
+        in shaping the Institute’s vibrant campus community — as advisors, coaches, heads of houses, mentors,
+        committee
+        members and much more.
+    </div>
+    <div class="rankings"><img src="img/award.png" alt=""></div>
+    <div class="rankings">
+        <iframe width="885" height="498" src="https://www.youtube.com/embed/uA9C8XqI07Y"
+            title="QS World University Rankings 2022" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
     <div class="container" id="contact">
         <form action="#">
@@ -127,22 +140,15 @@
 
         </form>
     </div>
-    <div class="rankings">
-        <iframe width="885" height="498" src="https://www.youtube.com/embed/uA9C8XqI07Y"
-            title="QS World University Rankings 2022" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </div>
     <footer>
-        <img src="img/favicon-32x32.png" alt="logo">
+        <a href="#"><img src="img/favicon-32x32.png" alt="logo"></a>
         <ul class="socials" id="socials">
             <li><a href="https://twitter.com/OfficialPU" target="_blank">Twitter</a></li>
             <li><a href="https://www.linkedin.com/school/panjab-university/" target=_blank>LinkedIn</a></li>
             <li><a href="https://www.facebook.com/official.pu.india/" target="_blank">Facebook</a></li>
             <li><a href="https://www.instagram.com/pu_chandigarh_updates/" target="_blank">Instagram</a></li>
         </ul>
-        <p>&copy; Copyright 2022 Tawishi University</p>
+        <p>&copy; Copyright 2022 <a href="#">Tawishi University</a></p>
     </footer>
 
 </body>
