@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #ff6f69;
+    font-family: cursive;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.links li {
+    list-style: none;
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.links a {
+    color: white;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.links a:hover:not(.active) {
+    background-color: black;
+}
+
+.links a.active {
+    background-color: black;
+}
+
+footer {
+    margin-top: 100px;
+    /*from where?*/
+    background-color: #0e0e0e;
+    color: #8996a0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    ;
+    z-index: 2;
+    text-align: center;
+}
+
+.socials {
+    padding: 20px;
+    text-align: center;
+}
+
+.socials li {
+    list-style: none;
+    padding: 4px;
+}
+
+.socials a {
+    color: white;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.socials a:hover:not(.active) {
+    color: red;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.faq {
+    margin: 10px;
+}
+
+.collapsible {
+    border: #0e0e0e;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #939496;
+    font-weight: bold;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
