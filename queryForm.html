@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="query.css" class="style">
+    <title>Query Form</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">
+            <h3><a href="index.html">Tawishi University</a></h3>
+        </div>
+        <ul class="links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <!-- <li><a href="#stats">Statistics</a></li> -->
+            <!-- <li><a href="#faculty">Faculty</a></li> -->
+            <li><a href="index.html#contact">Contacts</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="query">
+        <h2>Query Form</h1>
+            <form name="queryForm" class="query-form">
+                <p class="alert"></p>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+                <label for="contact">Contact no.</label>
+                <input type="tel" id="contact" name="contact" placeholder="Your contact.." required>
+                <label for="query">Query</label>
+                <textarea id="query" name="query" placeholder="Write your query here..."
+                    style="height:200px"></textarea>
+                <button class="submit-btn">Submit</button>
+            </form>
+    </div>
+    <footer>
+        <a href="#"><img src="img/favicon-32x32.png" alt="logo"></a>
+        <ul class="socials" id="socials">
+            <li><a href="https://twitter.com/OfficialPU" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/school/panjab-university/" target=_blank>LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/official.pu.india/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/pu_chandigarh_updates/" target="_blank">Instagram</a></li>
+        </ul>
+        <p>&copy; Copyright 2022 <a href="#">Tawishi University</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
