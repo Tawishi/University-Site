@@ -24,7 +24,6 @@ function validateForm(e) {
     const name_filter = /^[A-Z]?[a-z]*$/;
     const email_filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     const contact_filter = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
-    const query_filter = /^[a-zA-Z]*$/;
 
     if (!name_filter.test(name)) {
         displayAlert("Enter a valid name", 'danger');
@@ -37,14 +36,10 @@ function validateForm(e) {
     else if (!contact_filter.test(contact)) {
         displayAlert("Enter valid contact", 'danger');
     }
-
-    else if (!query || !query_filter.test(query)) {
-        displayAlert("Enter a valid query. Alphabets only",'danger');
-    }
-
+    
     // form submitted
     else {
-        displayAlert("Query submitted! We will get back to you.",'success');
+        displayAlert("Query submitted! We will get back to you.", 'success');
         setBackToDefault();
     }
 }
